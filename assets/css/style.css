@@ -99,7 +99,9 @@ img {
 .contact-form-box,
 .contact-info-box,
 .accordion-item,
-.stat-item {
+.stat-item,
+.section-card,
+.process-step-card {
     background: var(--glass-bg) !important;
     backdrop-filter: var(--glass-backdrop);
     -webkit-backdrop-filter: var(--glass-backdrop);
@@ -114,7 +116,9 @@ img {
 /* Liquid Glass Hover Effect */
 .keyword-card::before,
 .service-card::before,
-.value-card::before {
+.value-card::before,
+.section-card::before,
+.process-step-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -139,7 +143,9 @@ img {
 
 .keyword-card:hover,
 .service-card:hover,
-.value-card:hover {
+.value-card:hover,
+.section-card:hover,
+.process-step-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 15px 30px rgba(31, 38, 135, 0.2);
     border-color: var(--accent-gold);
@@ -1057,19 +1063,38 @@ img {
 }
 
 .step-number {
-    width: 50px;
-    height: 50px;
-    background-color: var(--primary-dark);
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
     color: var(--accent-gold);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     position: relative;
     z-index: 2;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    border: 2px solid var(--accent-gold);
+}
+
+.section-card {
+    padding: 60px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 40px;
+    border-left: 6px solid var(--accent-gold) !important;
+}
+
+.process-step-card {
+    text-align: center;
+    padding: 40px 30px;
+    border-top: 4px solid var(--accent-gold) !important;
+}
+
+.process-step-card h3 {
+    margin-bottom: 12px;
 }
 
 /* Property Categories */
