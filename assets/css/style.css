@@ -376,14 +376,21 @@ img {
     flex: 1;
 }
 
+.intro-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
 @media (max-width: 992px) {
-    .intro-wrapper {
+    .intro-wrapper,
+    .intro-wrapper.reverse {
         flex-direction: column;
         gap: 40px;
     }
 
-    .intro-content {
-        text-align: center;
+    .intro-content,
+    .intro-image {
+        width: 100%;
+        flex: none;
     }
 
     .intro-content .section-title,
@@ -1054,12 +1061,27 @@ img {
     position: relative;
 }
 
-.process-step {
+@media (max-width: 900px) {
+    .process-steps {
+        justify-content: center;
+    }
+}
+
+.process-step-card {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
     text-align: center;
     position: relative;
-    padding: 20px;
+    padding: 30px;
+    background: var(--glass-bg);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+@media (max-width: 600px) {
+    .process-step-card {
+        min-width: 100%;
+    }
 }
 
 .step-number {
@@ -1085,6 +1107,16 @@ img {
     border-radius: var(--radius-lg);
     margin-bottom: 40px;
     border-left: 6px solid var(--accent-gold) !important;
+}
+
+@media (max-width: 768px) {
+    .section-card {
+        padding: 30px 20px;
+    }
+
+    .intro-image img {
+        height: 300px !important;
+    }
 }
 
 .process-step-card {
@@ -1273,6 +1305,33 @@ img {
 
     .section-title h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-btns {
+        bottom: 20px;
+        right: 20px;
+        gap: 12px;
+    }
+
+    .scroll-top-btn {
+        bottom: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .float-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .section-card {
+        padding: 40px 15px;
+        border-left-width: 4px !important;
     }
 }
 
