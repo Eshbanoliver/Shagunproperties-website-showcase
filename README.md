@@ -15,6 +15,11 @@ A modern, responsive, and high-performance website designed for a Real Estate an
     -   Floating WhatsApp and Call buttons for quick engagement.
     -   Functional FAQ accordion.
 -   **Contact Integration**: Professional contact form and integrated Google Maps.
+-   **SEO & Performance Optimized**:
+    -   Configured `robots.txt` and `sitemap.xml`.
+    -   Meta theme color integration.
+    -   Image lazy loading and async decoding.
+    -   Preconnect hints for faster asset delivery.
 
 ## 🛠️ Tech Stack
 
@@ -42,6 +47,8 @@ The website consists of **5 main pages**:
 │   ├── js/
 │   │   └── script.js       # Animations and interactive logic
 │   └── images/             # Static image assets and logos
+├── robots.txt              # Search engine instructions
+├── sitemap.xml             # Search engine map
 ├── index.html              # Landing page
 ├── about.html              # Company profile
 ├── services.html           # Professional services
