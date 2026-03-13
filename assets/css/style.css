@@ -766,6 +766,15 @@ img {
 
 .footer-links li {
     margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    color: var(--text-light);
+    word-break: break-word;
+}
+
+.footer-links li i {
+    margin-top: 4px;
+    flex-shrink: 0;
 }
 
 .footer-links a {
