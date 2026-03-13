@@ -336,6 +336,14 @@ img {
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: var(--transition);
+    text-align: center;
+}
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .btn-primary {
@@ -353,7 +361,6 @@ img {
     background-color: transparent;
     color: var(--white);
     border: 2px solid var(--white);
-    margin-left: 16px;
 }
 
 .btn-outline:hover {
@@ -696,6 +703,7 @@ img {
     display: flex;
     align-items: flex-start;
     margin-bottom: 32px;
+    word-break: break-word;
 }
 
 .contact-icon {
@@ -1314,6 +1322,17 @@ img {
 
     .section-title h2 {
         font-size: 2rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        margin-left: 0 !important;
     }
 }
 
