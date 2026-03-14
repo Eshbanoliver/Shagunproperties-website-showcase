@@ -795,6 +795,36 @@ img {
     padding-left: 5px;
 }
 
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.social-icon-facebook {
+    color: #1877F2 !important;
+}
+
+.social-icon-instagram {
+    color: #E4405F !important;
+}
+
+.social-icon-linkedin {
+    color: #0A66C2 !important;
+}
+
+.social-icon-whatsapp {
+    color: #25D366 !important;
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
